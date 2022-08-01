@@ -13,9 +13,9 @@ public class BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Temporal(TemporalType.TIME) // 告诉JPA框架该成员变量是一个时间类型
+    @Temporal(TemporalType.TIMESTAMP) // 告诉JPA框架该成员变量是一个时间类型，精确到年月日时分秒
     private Date createdDate;
 
-    @Temporal(TemporalType.TIME)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date modifiedDate;
 }
