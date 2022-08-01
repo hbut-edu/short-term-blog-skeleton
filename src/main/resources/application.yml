@@ -3,7 +3,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/demo
     username: root
-    password: ljh/1989
+    password: password
   jpa:
     show-sql: true
     generate-ddl: true
