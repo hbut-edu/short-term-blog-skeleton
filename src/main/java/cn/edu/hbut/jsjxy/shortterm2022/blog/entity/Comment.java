@@ -14,12 +14,10 @@ import javax.persistence.*;
 public class Comment extends BaseEntity {
 
     @ManyToOne
-    @JsonBackReference
     @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne
-    @JsonBackReference
     @JoinColumn(name = "article_id")
     private Article article;
 
